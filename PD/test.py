@@ -40,7 +40,6 @@ def playRound(match):
 	p2.updateScore(p2Strat, payoff[p1Strat][p2Strat][1])
 
 def returnResults(players):
-	players = [Player(1), Player(2), Player(3), Player(4), Player(5), Player(6), Player(7), Player(8), Player(9), Player(10)]
 	matches = getRoundRobinMatches(players)
 	for i in range(2000):
 		for match in matches:
