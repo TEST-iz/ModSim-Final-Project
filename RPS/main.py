@@ -64,7 +64,6 @@ def plotGraphs(players, gameName, labels):
 		figure, tax = ternary.figure(scale=scale)
 		tax.set_title("Scatter Plot", fontsize=20)
 		tax.boundary(linewidth=2.0)
-		# Plot a few different styles with a legend
 		tax.scatter(players[i].points, s = players[i].sizes * 5, color='blue', label=f'P{i+1}', alpha = 0.3)
 		tax.scatter(players[i+1].points, s = players[i+1].sizes * 5, color='orange', label=f'P{i+2}', alpha = 0.4)
 		tax.bottom_axis_label(labels[0], fontsize=10)
@@ -84,9 +83,4 @@ if __name__ == "__main__":
 	print("Payoff Matrix:", payoff)
 	players = [Player(1), Player(2), Player(3), Player(4), Player(5), Player(6), Player(7), Player(8), Player(9), Player(10)]
 	players = returnResults(players)
-	for p in players:
-		print(p)
 	plotGraphs(players, gameName, labels)
-	# cleanUpPrefs(players)
-	# for p in players:
-	# 	print(p.points, p.sizes)
