@@ -1,0 +1,11 @@
+# rps.txt
+
+# the number below indicates the number of choices,
+# which is helpful for file parsing
+3	
+
+# title of game
+Rock Paper Scissors
+rock		  0   0		    -1   1		    1   -1
+paper	      1  -1		    0    0		    -1   1
+Scissors      -1  1         1    -1         0    0
