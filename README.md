@@ -32,7 +32,7 @@ or
 
 ### Prisoners' Dilemma
 
-![frr](/ModSim-Final-Project/samples/PD_sample.png)
+![frr](/samples/PD_sample.png)
 
 ### Stag and Hare 
 
