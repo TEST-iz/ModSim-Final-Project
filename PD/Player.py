@@ -16,6 +16,9 @@ import random
 
 class Player:
     def __init__(self, id):
+        """Initializes a Player object with default preferences and scores.
+        Args:
+            id (int): the unique identifier for the player"""
         self.id = id
         self.prefs = [0.5, 0.5] # strategy1 and strategy 2
         self.currentGameScore = 0
@@ -38,6 +41,7 @@ class Player:
 
     # todo: based on the preferences, pseduorandomly select strategy1 or strategy2
     def getStrategy(self):
+        """Selects a strategy based on the player's current preferences."""
         r = random.random()
         if r <= self.prefs[0]:
             return 0
@@ -47,6 +51,10 @@ class Player:
     # todo: update totalScore, numGamesPlayed, and averageScore
     # this method assumes that a game has been played
     def updateScore(self, strat, score):
+        """Updates the player's score and preferences after a game.
+        Args:
+            strat (int): the strategy used in the game
+            score (int): the score obtained from the game"""
         self.updatePrefs(strat, score)
         self.totalScore += score
         self.numGamesPlayed += 1
@@ -54,6 +62,10 @@ class Player:
 
     # todo: use a formula to update the current Player's preferences
     def updatePrefs(self, strat, score):
+        """Updates the player's preferences based on the strategy used and the score obtained.
+        Args:
+            strat (int): the strategy used in the game
+            score (int): the score obtained from the game"""
         self.prefs[strat] = self.prefs[strat] + (score - self.averageScore)/100
         self.prefs[abs(1 - strat)] = 1 - self.prefs[strat]
 
@@ -67,4 +79,5 @@ class Player:
 
     # format the object for printing: P1: <p, 1 - p>)
     def __str__(self):
+        """Returns a string representation of the player."""
         return f"{self.id}: <{self.prefs[0]}, {self.prefs[1]}>"
