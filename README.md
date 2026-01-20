@@ -36,14 +36,14 @@ or
 
 ### Stag and Hare 
 
-![frr](/ModSim-Final-Project/samples/SH_sample1.png)
-![frr](/ModSim-Final-Project/samples/SH_sample2.png)
+![frr](/samples/SH_sample1.png)
+![frr](/samples/SH_sample2.png)
 
 ### Battle of the Sexes
 
-![frr](/ModSim-Final-Project/samples/BS_sample1.png)
-![frr](/ModSim-Final-Project/samples/BS_sample2.png)
+![frr](/samples/BS_sample1.png)
+![frr](/samples/BS_sample2.png)
 
 ### Rock Paper Scissors
 
-![frr](/ModSim-Final-Project/samples/RPS_sample.png)
+![frr](/samples/RPS_sample.png)
